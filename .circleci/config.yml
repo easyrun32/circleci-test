@@ -5,7 +5,7 @@ orbs:
 jobs:
   build:
     docker:
-      dockerfile: "../Dockerfile"
+      dockerfile: "Dockerfile"
 
     executor: ruby/default
     steps:
