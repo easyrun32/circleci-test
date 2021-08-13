@@ -9,4 +9,6 @@ jobs:
     executor: ruby/default
     steps:
       - checkout
-      - run: docker -v
+      - run: pwd
+      - run: docker build  -f ./Dockerfile  -t birchbox/test:latest  ./
+      - run: docker images
