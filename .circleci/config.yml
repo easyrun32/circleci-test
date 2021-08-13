@@ -5,9 +5,8 @@ orbs:
 jobs:
   build:
     docker:
-      dockerfile: "Dockerfile"
-
+      - image: circleci/ruby:2.6.3-stretch-node
     executor: ruby/default
     steps:
       - checkout
-      - run: echo hello
+      - run: docker -v
